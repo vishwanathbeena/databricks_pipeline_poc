@@ -1,0 +1,7 @@
+{
+    "control_database":"delta_contol_db",
+    "control_flow_table_raw":"delta_control_table_raw",
+    "control_flow_table_path_raw":"C:/MyFolder/Learning/databricks_pipeline/sample_data/control_metadata_raw",
+    "control_flow_table_intg":"delta_control_table_intg",
+    "control_flow_table_path_intg":"C:/MyFolder/Learning/databricks_pipeline/sample_data/control_metadata_intg"
+}

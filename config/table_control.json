@@ -1,0 +1,26 @@
+[
+   {
+      "data_flow_id": "100",
+      "data_flow_group": "A1",
+      "source_system": "MYSQL",
+      "source_format": "cloudFiles",
+      "source_details": {
+         "source_database": "APP",
+         "source_table": "CUSTOMERS",
+         "source_path_dev": "{dbfs_path}/cdc_raw/customers"
+      },
+      "raw_database_dev": "raw",
+      "raw_table": "employee",
+      "raw_reader_options": {
+         "cloudFiles.format": "csv",
+         "cloudFiles.inferColumnTypes": "true",
+         "cloudFiles.rescuedDataColumn": "_rescued_data"
+      },
+      "raw_partition_columns": "",
+      "raw_table_path_dev": "{dbfs_path}/data/raw/customers",
+      "intg_database_dev": "intg",
+      "intg_table": "customers",
+      "intg_partition_columns": "",
+      "intg_table_path_dev": "{dbfs_path}/data/intg/customers"
+   }
+]

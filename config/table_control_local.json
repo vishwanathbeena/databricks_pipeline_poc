@@ -1,0 +1,44 @@
+[
+   {
+      "data_flow_id": "100",
+      "data_flow_group": "A1",
+      "source_system": "MYSQL",
+      "source_format": "csv",
+      "source_details": {
+         "source_database": "APP",
+         "source_table": "CUSTOMERS",
+         "source_path_dev": "sample_data/input/customers"
+      },
+      "raw_database_dev": "raw",
+      "raw_table": "customers",
+      "raw_reader_options": {
+         "header": "true"
+      },
+      "raw_partition_columns": "",
+      "raw_table_path_dev": "sample_data/raw_layer/customers",
+      "intg_database_dev": "intg",
+      "intg_table": "customers",
+      "intg_partition_columns": "",
+      "intg_table_path_dev": "sample_data/intg_layer/customers"
+   },
+   {
+      "data_flow_id": "101",
+      "data_flow_group": "A1",
+      "source_system": "MYSQL",
+      "source_format": "json",
+      "source_details": {
+         "source_database": "APP",
+         "source_table": "SALES",
+         "source_path_dev": "sample_data/input/sales"
+      },
+      "raw_database_dev": "raw",
+      "raw_table": "sales",
+      "raw_reader_options": {},
+      "raw_partition_columns": "",
+      "raw_table_path_dev": "sample_data/raw_layer/sales",
+      "intg_database_dev": "intg",
+      "intg_table": "sales",
+      "intg_partition_columns": "",
+      "intg_table_path_dev": "sample_data/intg_layer/sales"
+   }
+]
